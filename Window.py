@@ -16,6 +16,8 @@ class Window(tk.Frame):
 				  text="Password: ")
 		Label_1.grid(row=0, column=0)
 		
+		# Technically, this serves no real purpose other than to communicate
+		# that something happened. 
 		Field_1 = tk.Entry(self.master, 
 				  bd=5, 
 				  state=tk.DISABLED,
@@ -35,14 +37,13 @@ class Window(tk.Frame):
 					text="Copy to Clipboard", 
 					command=lambda:self.copyB(Field_1))
 		Button_C.pack(side=tk.LEFT)
-		#Button_C.grid(row=1, column=0, columnspan=2)
 		
 		Button_E = tk.Button(bottomFrame, 
 					text="Exit Program",
 					command=lambda:self.exitB())
 		Button_E.pack(side=tk.RIGHT)
-		#Button_E.grid(row=1, column=2, columnspan=2)
 		
+	# Lambda functions		
 	def genButton(self, var):
 		var.set(pwd_build())
 	def copyB(self, field):
@@ -53,10 +54,9 @@ class Window(tk.Frame):
 		self.master.destroy()
 		
 
-def main():
-	root = tk.Tk()
-	app = Window(root)
+root = tk.Tk()
+app = Window(root)
 
-	root.wm_title("Hardware Password Generator")
+root.wm_title("Hardware Password Generator")
 
-	root.mainloop()
+root.mainloop()
