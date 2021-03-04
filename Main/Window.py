@@ -36,8 +36,7 @@ class Window(tk.Frame):
 				  text="Password: ")
 		Label_P.grid(row=0, column=0)
 		
-		# Technically, this serves no real purpose other than to communicate
-		# that something happened. 
+		# Technically, this serves no real purpose other than to communicate that something happened. 
 		Field_P = tk.Entry(middleFrame, 
 				  bd=5, 
 				  state=tk.DISABLED,

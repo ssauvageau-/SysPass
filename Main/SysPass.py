@@ -9,8 +9,7 @@ import linecache
 
 chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	
-# Arbitrarily 'builds' a unique text string for the system in question, 
-# then hashes it.
+# Arbitrarily 'builds' a unique text string for the system in question, then hashes it.
 def build_sys_uuid(use = ""):
 	uname = platform.uname().system
 	mach = platform.uname().machine

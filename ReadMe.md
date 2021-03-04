@@ -2,6 +2,8 @@
 
 Reliably generates secure passwords based on system hardware information. These passwords are not stored anywhere on the machine but will persist between boot cycles if hardware remains unchanged.
 
+![Example usage. No, this is not my github password.](https://i.imgur.com/VPiUVL7.png)
+
 ## File Descriptions
 
 ReadMe.md - This file. It's a ReadMe. Come on, man.
